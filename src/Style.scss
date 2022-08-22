@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+button:hover{
+    background: #68A35B !important;
+}
+.header{
+    img{
+        height: 75px;
+        animation: rotate 5s infinite linear;
+        cursor: pointer;
+    }
+    @keyframes rotate{
+        from{transform: rotate(0deg);}
+        to{transform: rotate(359deg);}
+    }
+}
+/* Media Rules */
+@media (max-width:768px){
+    .main{
+        flex-direction: column;
+    }
+    .author{
+        *{
+            text-align: center !important;
+        }
+    }
+}
